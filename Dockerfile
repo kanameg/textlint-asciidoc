@@ -16,4 +16,3 @@ COPY .textlintrc /work/
 
 ENTRYPOINT ["textlint", "--config", "/work/.textlintrc"]
 CMD ["-h"]
-
