@@ -11,8 +11,8 @@ RUN npm install -g textlint@${TEXTLINT_VERSION} \
     textlint-rule-spellcheck-tech-word \
     textlint-plugin-asciidoctor
 
-WORKDIR /work
-COPY .textlintrc /work/
+WORKDIR /documents
+COPY .textlintrc /documents/
 
 ENTRYPOINT ["textlint", "--config", "/work/.textlintrc"]
 CMD ["-h"]
