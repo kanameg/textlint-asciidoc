@@ -1,0 +1,10 @@
+# ゴミファイル系
+.DS_Store
+*.pdf
+*.html
+
+# textlint系ファイル
+node_modules
+package-lock.json
+package.json
+

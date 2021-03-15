@@ -12,7 +12,7 @@ RUN npm install -g textlint@${TEXTLINT_VERSION} \
     textlint-plugin-asciidoctor
 
 WORKDIR /documents
-COPY .textlintrc /documents/
+COPY .textlintrc /
 
-ENTRYPOINT ["textlint", "--config", "/work/.textlintrc"]
+ENTRYPOINT ["textlint", "--config", "/.textlintrc"]
 CMD ["-h"]
