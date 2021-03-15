@@ -5,14 +5,14 @@
 本コンテナはAsciiDocやMarkdownで作成した技術文書の校正用に使用します。
 
 === 起動方法
-コンテナ内の`/work`が校正対象のディレクトリになるので、以下のようにdockerコマンドを使用して起動します。
+コンテナ内の`/documents` が校正対象のディレクトリになるので、以下のようにdockerコマンドを使用して起動します。
 
 ==== 単一ファイルの校正
 
 `test.adoc` を文書校正したい場合以下のようにコンテナを起動します。
 
 ....
-$ docker run -it --rm -v $PWD:/work textlint/asciidoc test.adoc
+$ docker run -it --rm -v $pwd:/documents textlint-asciidoc test.adoc
 ....
 
 ==== ヘルプの表示
@@ -20,6 +20,6 @@ $ docker run -it --rm -v $PWD:/work textlint/asciidoc test.adoc
 `textlint` のヘルプを表示したい場合は引数を指定せずにコンテナを起動します。
 
 ....
-$ docker run -it --rm textlint/asciidoc
+$ docker run -it --rm textlint-asciidoc
 ....
 
