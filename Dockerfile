@@ -9,6 +9,7 @@ RUN npm install -g textlint \
     textlint-rule-preset-ja-technical-writing \
     textlint-rule-preset-ja-spacing \
     textlint-rule-spellcheck-tech-word \
+    textlint-rule-sentence-length \
     textlint-plugin-asciidoctor
 
 WORKDIR /documents
