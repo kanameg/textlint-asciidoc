@@ -15,5 +15,5 @@ RUN npm install -g textlint \
 WORKDIR /documents
 COPY .textlintrc /
 
-ENTRYPOINT ["textlint", "--config", "/.textlintrc"]
-CMD ["-h"]
+#ENTRYPOINT ["textlint", "--config", "/.textlintrc"]
+#CMD ["-h"]

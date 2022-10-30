@@ -12,7 +12,7 @@
 `test.adoc` を文書校正したい場合以下のようにコンテナを起動します。
 
 ....
-$ docker run --platform linux/x86_64 -it --rm -v $(pwd):/documents registry.gitlab.com/kanameg/textlint-asciidoc test.adoc
+$ docker run --platform linux/x86_64 -it --rm -v $(pwd):/documents registry.gitlab.com/kanameg/textlint-asciidoc textlint test.adoc
 ....
 
 ==== ヘルプの表示
@@ -20,6 +20,6 @@ $ docker run --platform linux/x86_64 -it --rm -v $(pwd):/documents registry.gitl
 `textlint` のヘルプを表示したい場合は引数を指定せずにコンテナを起動します。
 
 ....
-$ docker run --platform linux/x86_64 -it --rm textlint-asciidoc
+$ docker run --platform linux/x86_64 -it --rm registry.gitlab.com/kanameg/textlint-asciidoc textlint -h
 ....
 
