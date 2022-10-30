@@ -1,12 +1,15 @@
 {
     "filters": {},
     "rules": {
-	"preset-japanese": true,
-	"preset-ja-spacing": true,
-	"preset-ja-technical-writing": true,
-	"spellcheck-tech-word": true
+        "preset-japanese": true,
+        "preset-ja-spacing": true,
+        "preset-ja-technical-writing": true,
+        "spellcheck-tech-word": true,
+        "sentence-length": {
+            "max": 500
+        }
     },
     "plugins": [
-	"asciidoctor"
+    	"asciidoctor"
     ]
 }
