@@ -2,9 +2,9 @@ FROM node:latest
 
 MAINTAINER Kaname Yoshida <kaname.g@gmail.com>
 
-ENV TEXTLINT_VERSION 11.8.2
-RUN npm install -g textlint@${TEXTLINT_VERSION} \
+RUN npm install -g textlint \
     && npm install -g \
+    @textlint/ast-node-types \
     textlint-rule-preset-japanese \
     textlint-rule-preset-ja-technical-writing \
     textlint-rule-preset-ja-spacing \
