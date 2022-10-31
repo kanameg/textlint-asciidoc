@@ -5,6 +5,7 @@ MAINTAINER Kaname Yoshida <kaname.g@gmail.com>
 RUN npm install -g textlint \
     && npm install -g \
     @textlint/ast-node-types \
+    textlint-filter-rule-allowlist \
     textlint-rule-preset-japanese \
     textlint-rule-preset-ja-technical-writing \
     textlint-rule-preset-ja-spacing \
