@@ -8,7 +8,8 @@
         "preset-ja-technical-writing": {
             "sentence-length": false
         },
-        "spellcheck-tech-word": true
+        "spellcheck-tech-word": true,
+        "ja-no-weak-phrase": false
     },
     "plugins": [
     	"asciidoctor"
